@@ -1,57 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Thomas</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .vidbg{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(to right, rgba(64, 255, 77, 0.312), rgba(45, 76, 255, 0.31));
-            color: rgb(255, 255, 255, 0.412); 
-            position: relative;
-            min-height: 100vh;
-            font-size: 3em;
-            overflow: hidden;
-        }
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        .videobg{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            min-height: 100%;
-            min-width: 100%;
-            z-index: -1;
-        }
-    </style>
-
-</head>
-<body>
-    <script>
-        setTimeout(() => {
-          document.getElementById('landing').style.display = 'none';
-          document.getElementById('main-page').style.display = 'block';
-        }, 3000);
-      </script>
-    </head>
-    <body>
-    
-      <!-- Landing Page -->
-      <div id="landing">
-        <div>
-          <h1>Selamat Datang!</i></h1>
-          <p>Mohon tunggu selama 5 detik...</p>
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portofolio Thomas Herpin</title>
+  </head>
+  <body id="Home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #A9D8B8;">
+      <div class="container">
+        <a class="navbar-brand" href="#">Thomas Herpin</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Project">Project</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    
-</body>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Perkenalan -->
+    <section>
+      <div class="divider py-5">
+          <div class="hero py-5" id="hero">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 py-5">
+                    <h1>Halo <img src="wavinghand.png" alt="lambaiantangan" 
+                      style="width: 50px; height: auto;"></h1>
+                    <h1>
+                      Saya <span style="color: #BEFFC7;">Thomas Herpin</span>
+                    </h1>
+                    <h2>Mahasiswa Program Studi Sistem Informasi</h2>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="fotoThomas.jpg"
+                      alt=""
+                      width="500"
+                      height="500"
+                      class="d-block m-auto "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      
+    <!-- Akhir Perkenalan -->
+
+    <!-- About -->
+    <section id="About">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>Halo! Saya Thomas Herpin,<br> Mahasiswa semester 4 Universitas Pelita Harapan program studi Sistem Informasi angkatan tahun 2023.</br></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Project -->
+    <section id="Project">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Project</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-4">
+            <div class="card">
+              <img src="spaceInvader cover.png" class="card-img-top" alt="fotoproject"/>
+              <div class="card-body">
+                <p class="card-text"></p><b>Space Invaders</b><br>Game modifikasi arcade 80-an bersama teman saya. Kita akan bermain sebagai kapal yang harus melawan gelombang musuh alien sambil menghindari peluru.</p>
+              </div>
+            </div>
+          </div>
+
+    <!--Akhir Project-->
+
+   
+    <!-- Contact -->
+    <section id="Contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me!</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="Email">
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn" style="background-color: #BEFFC7;">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Akhir Contact-->
+
+    <!--Footer-->
+    <footer class="text-dark pb-3 text-center">
+      <br><br><br>
+      <p>Dibuat dengan kebahagiaan <i class="bi bi-emoji-smile-fill"></i></p>
+    </footer>
+    <!--Akhir Footer-->
+          
+  </body>
 </html>
