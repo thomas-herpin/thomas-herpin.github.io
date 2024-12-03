@@ -16,7 +16,6 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* background-color: rgba(0, 0 ,0, 0.385); */
             background: linear-gradient(to right, rgba(64, 255, 77, 0.312), rgba(45, 76, 255, 0.31));
             color: rgb(255, 255, 255, 0.412); 
             position: relative;
@@ -37,6 +36,22 @@
 
 </head>
 <body>
+    <script>
+        setTimeout(() => {
+          document.getElementById('landing').style.display = 'none';
+          document.getElementById('main-page').style.display = 'block';
+        }, 3000);
+      </script>
+    </head>
+    <body>
+    
+      <!-- Landing Page -->
+      <div id="landing">
+        <div>
+          <h1>Selamat Datang!</i></h1>
+          <p>Mohon tunggu selama 5 detik...</p>
+        </div>
+      </div>
     
 </body>
 </html>
